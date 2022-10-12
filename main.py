@@ -16,6 +16,8 @@ while True:
         sleep(music.duration) #prevent from killing
         os.remove(filename) #remove temperory file
         break
+    elif a == "" or a == " ":
+        pass
     else:
         tts = gTTS(text=a, lang='en')
         filename = 'temp.mp3'
